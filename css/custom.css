@@ -1,0 +1,908 @@
+.gallery-header {
+background-color:white;
+color: #023047;
+padding: 60px 0;
+margin-bottom: 30px;
+text-align: center;
+}
+.category-description {
+background-color: white;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 40px;
+}
+.gallery-img {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: transform 0.3s;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.gallery-img:hover {
+transform: scale(1.03);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-caption {
+color: white;
+padding: 8px 12px;
+border-radius: 0 0 10px 10px;
+position: absolute;
+bottom: 20px;
+left: 15px;
+right: 15px;
+}
+.img-container {
+position: relative;
+margin-bottom: 25px;
+}
+.img-halloween{
+background-color: #ff7100;	 
+}
+.img-xmas{
+background-color: #2A7111;	 
+}
+.img-summer{
+background-color: #0081C7;
+}
+.img-easter{
+background-color: #9386e6;
+}
+.img-card:hover{
+transform: scale(1.03) !important;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-card {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.card-hover {transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.card-hover:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.btn-purple {
+background-color: #800080 !important;
+border-color: #800080 !important;
+color: white !important;
+}
+.btn-purple:hover {
+background-color: #660066 !important;
+border-color: #660066 !important;
+}
+/* Subscribe Button */
+.subscribe-container {
+display: flex;
+align-items: center;
+justify-content: center;          
+border-radius: 20px;
+width: 500px;
+height: 200px;
+padding: 20px;
+margin: 0 auto;
+}
+.subscribe-form {
+display: flex;
+width: 100%;
+gap: 25px; 
+}
+.subscribe-input, .subscribe-btn {
+flex: 1;
+height: 50px;
+border: none;
+border-radius: 3px;
+text-align: center;
+font-size: 18px;
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+}
+.subscribe-input {
+outline: none;
+}
+.subscribe-btn {
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+cursor: pointer;
+transition: 0.3s;
+flex: 0.4; 
+}
+.subscribe-btn:hover {
+background-color: #0088cc;
+}
+@media (max-width: 576px) { /* Mobile screens */
+.subscribe-container {
+width: 90%;
+height: auto;
+padding: 15px;
+}
+.subscribe-form {
+flex-direction: column;
+gap: 10px;
+}
+.subscribe-btn {
+flex: 1;
+height: 45px;
+}
+}
+.footer{background-color:#ffefe5;
+}
+.circular-card {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+border: 2px dashed white; 
+color: white;
+font-size: 36px;
+text-align: center;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Social Icons*/
+.social-icons a i {
+color: #128f8b; 
+transition: color 0.3s ease-in-out;
+}
+.social-icons a i:hover {
+color: #0a5e5b; /* Darker shade on hover */
+}
+.post-area{
+list-style: none;
+display: flex;
+gap: 22px;
+align-items: center;
+margin-bottom: 20px;
+@media(max-width:450px){
+gap: 12px;
+}
+.main-menu ul li a{color:orange;}
+.text-body-secondary{font-size:21px;}
+/* Cute images styling */
+.cute-img {
+width: 50px;
+height: 50px;
+position: absolute;
+opacity: 0;
+transition: all 0.5s ease;
+}
+.cute-top-left {
+top: 20px;
+left: 20px;
+}
+.cute-top-right {
+top: 20px;
+right: 20px;
+}
+.cute-bottom-left {
+bottom: 20px;
+left: 20px;
+}
+.cute-bottom-right {
+bottom: 20px;
+right: 20px;
+}
+/* Animation classes */
+.cute-img.animate {
+opacity: 1;
+transform: scale(1.2) rotate(10deg);
+}
+.masthead {
+position: relative;
+overflow: hidden;
+}
+/* Activities by season */
+.card-img-hover {
+transition: transform 0.3s ease;
+}
+.card-img-hover:hover, 
+.card-img-hover.active {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+z-index: 10;
+position: relative;
+}
+@media (max-width: 991px) {
+.navbar-collapse {
+background: #fff; 
+padding: 20px;
+margin-top: 15px;
+}
+.navbar-toggler {
+border: none;
+padding: 10px;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+}
+.gallery-header {
+background-color:white;
+color: #023047;
+padding: 60px 0;
+margin-bottom: 30px;
+text-align: center;
+}
+.category-description {
+background-color: white;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 40px;
+}
+.gallery-img {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: transform 0.3s;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.gallery-img:hover {
+transform: scale(1.03);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-caption {
+color: white;
+padding: 8px 12px;
+border-radius: 0 0 10px 10px;
+position: absolute;
+bottom: 20px;
+left: 15px;
+right: 15px;
+}
+.img-container {
+position: relative;
+margin-bottom: 25px;
+}
+.img-halloween{
+background-color: #ff7100;	 
+}
+.img-xmas{
+background-color: #2A7111;	 
+}
+.img-summer{
+background-color: #0081C7;
+}
+.img-easter{
+background-color: #9386e6;
+}
+.img-card:hover{
+transform: scale(1.03) !important;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-card {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.card-hover {transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.card-hover:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.btn-purple {
+background-color: #800080 !important;
+border-color: #800080 !important;
+color: white !important;
+}
+.btn-purple:hover {
+background-color: #660066 !important;
+border-color: #660066 !important;
+}
+/* Subscribe Button */
+.subscribe-container {
+display: flex;
+align-items: center;
+justify-content: center;          
+border-radius: 20px;
+width: 500px;
+height: 200px;
+padding: 20px;
+margin: 0 auto;
+}
+.subscribe-form {
+display: flex;
+width: 100%;
+gap: 25px; 
+}
+.subscribe-input, .subscribe-btn {
+flex: 1;
+height: 50px;
+border: none;
+border-radius: 3px;
+text-align: center;
+font-size: 18px;
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+}
+.subscribe-input {
+outline: none;
+}
+.subscribe-btn {
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+cursor: pointer;
+transition: 0.3s;
+flex: 0.4; 
+}
+.subscribe-btn:hover {
+background-color: #0088cc;
+}
+@media (max-width: 576px) { /* Mobile screens */
+.subscribe-container {
+width: 90%;
+height: auto;
+padding: 15px;
+}
+.subscribe-form {
+flex-direction: column;
+gap: 10px;
+}
+.subscribe-btn {
+flex: 1;
+height: 45px;
+}
+}
+.footer{background-color:#ffefe5;
+}
+.circular-card {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+border: 2px dashed white; 
+color: white;
+font-size: 36px;
+text-align: center;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Social Icons*/
+.social-icons a i {
+color: #128f8b; 
+transition: color 0.3s ease-in-out;
+}
+.social-icons a i:hover {
+color: #0a5e5b; /* Darker shade on hover */
+}
+.post-area{
+list-style: none;
+display: flex;
+gap: 22px;
+align-items: center;
+margin-bottom: 20px;
+@media(max-width:450px){
+gap: 12px;
+}
+.main-menu ul li a{color:orange;}
+.text-body-secondary{font-size:21px;}
+/* Cute images styling */
+.cute-img {
+width: 50px;
+height: 50px;
+position: absolute;
+opacity: 0;
+transition: all 0.5s ease;
+}
+.cute-top-left {
+top: 20px;
+left: 20px;
+}
+.cute-top-right {
+top: 20px;
+right: 20px;
+}
+.cute-bottom-left {
+bottom: 20px;
+left: 20px;
+}
+.cute-bottom-right {
+bottom: 20px;
+right: 20px;
+}
+/* Animation classes */
+.cute-img.animate {
+opacity: 1;
+transform: scale(1.2) rotate(10deg);
+}
+.masthead {
+position: relative;
+overflow: hidden;
+}
+/* Activities by season */
+.card-img-hover {
+transition: transform 0.3s ease;
+}
+.card-img-hover:hover, 
+.card-img-hover.active {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+z-index: 10;
+position: relative;
+}
+@media (max-width: 991px) {
+.navbar-collapse {
+background: #fff; 
+padding: 20px;
+margin-top: 15px;
+}
+.navbar-toggler {
+border: none;
+padding: 10px;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+}
+.gallery-header {
+background-color:white;
+color: #023047;
+padding: 60px 0;
+margin-bottom: 30px;
+text-align: center;
+}
+.category-description {
+background-color: white;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 40px;
+}
+.gallery-img {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: transform 0.3s;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.gallery-img:hover {
+transform: scale(1.03);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-caption {
+color: white;
+padding: 8px 12px;
+border-radius: 0 0 10px 10px;
+position: absolute;
+bottom: 20px;
+left: 15px;
+right: 15px;
+}
+.img-container {
+position: relative;
+margin-bottom: 25px;
+}
+.img-halloween{
+background-color: #ff7100;	 
+}
+.img-xmas{
+background-color: #2A7111;	 
+}
+.img-summer{
+background-color: #0081C7;
+}
+.img-easter{
+background-color: #9386e6;
+}
+.img-card:hover{
+transform: scale(1.03) !important;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-card {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.card-hover {transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.card-hover:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.btn-purple {
+background-color: #800080 !important;
+border-color: #800080 !important;
+color: white !important;
+}
+.btn-purple:hover {
+background-color: #660066 !important;
+border-color: #660066 !important;
+}
+/* Subscribe Button */
+.subscribe-container {
+display: flex;
+align-items: center;
+justify-content: center;          
+border-radius: 20px;
+width: 500px;
+height: 200px;
+padding: 20px;
+margin: 0 auto;
+}
+.subscribe-form {
+display: flex;
+width: 100%;
+gap: 25px; 
+}
+.subscribe-input, .subscribe-btn {
+flex: 1;
+height: 50px;
+border: none;
+border-radius: 3px;
+text-align: center;
+font-size: 18px;
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+}
+.subscribe-input {
+outline: none;
+}
+.subscribe-btn {
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+cursor: pointer;
+transition: 0.3s;
+flex: 0.4; 
+}
+.subscribe-btn:hover {
+background-color: #0088cc;
+}
+@media (max-width: 576px) { /* Mobile screens */
+.subscribe-container {
+width: 90%;
+height: auto;
+padding: 15px;
+}
+.subscribe-form {
+flex-direction: column;
+gap: 10px;
+}
+.subscribe-btn {
+flex: 1;
+height: 45px;
+}
+}
+.footer{background-color:#ffefe5;
+}
+.circular-card {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+border: 2px dashed white; 
+color: white;
+font-size: 36px;
+text-align: center;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Social Icons*/
+.social-icons a i {
+color: #128f8b; 
+transition: color 0.3s ease-in-out;
+}
+.social-icons a i:hover {
+color: #0a5e5b; /* Darker shade on hover */
+}
+.post-area{
+list-style: none;
+display: flex;
+gap: 22px;
+align-items: center;
+margin-bottom: 20px;
+@media(max-width:450px){
+gap: 12px;
+}
+.main-menu ul li a{color:orange;}
+.text-body-secondary{font-size:21px;}
+/* Cute images styling */
+.cute-img {
+width: 50px;
+height: 50px;
+position: absolute;
+opacity: 0;
+transition: all 0.5s ease;
+}
+.cute-top-left {
+top: 20px;
+left: 20px;
+}
+.cute-top-right {
+top: 20px;
+right: 20px;
+}
+.cute-bottom-left {
+bottom: 20px;
+left: 20px;
+}
+.cute-bottom-right {
+bottom: 20px;
+right: 20px;
+}
+/* Animation classes */
+.cute-img.animate {
+opacity: 1;
+transform: scale(1.2) rotate(10deg);
+}
+.masthead {
+position: relative;
+overflow: hidden;
+}
+/* Activities by season */
+.card-img-hover {
+transition: transform 0.3s ease;
+}
+.card-img-hover:hover, 
+.card-img-hover.active {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+z-index: 10;
+position: relative;
+}
+@media (max-width: 991px) {
+.navbar-collapse {
+background: #fff; 
+padding: 20px;
+margin-top: 15px;
+}
+.navbar-toggler {
+border: none;
+padding: 10px;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+}
+.gallery-header {
+background-color:white;
+color: #023047;
+padding: 60px 0;
+margin-bottom: 30px;
+text-align: center;
+}
+.category-description {
+background-color: white;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 40px;
+}
+.gallery-img {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: transform 0.3s;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.gallery-img:hover {
+transform: scale(1.03);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-caption {
+color: white;
+padding: 8px 12px;
+border-radius: 0 0 10px 10px;
+position: absolute;
+bottom: 20px;
+left: 15px;
+right: 15px;
+}
+.img-container {
+position: relative;
+margin-bottom: 25px;
+}
+.img-halloween{
+background-color: #ff7100;	 
+}
+.img-xmas{
+background-color: #2A7111;	 
+}
+.img-summer{
+background-color: #0081C7;
+}
+.img-easter{
+background-color: #9386e6;
+}
+.img-card:hover{
+transform: scale(1.03) !important;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.img-card {
+border-radius: 10px;
+margin-bottom: 20px;
+transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+cursor: pointer;
+height: 250px;
+width: 100%;
+object-fit: cover;
+}
+.card-hover {transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.card-hover:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.btn-purple {
+background-color: #800080 !important;
+border-color: #800080 !important;
+color: white !important;
+}
+.btn-purple:hover {
+background-color: #660066 !important;
+border-color: #660066 !important;
+}
+/* Subscribe Button */
+.subscribe-container {
+display: flex;
+align-items: center;
+justify-content: center;          
+border-radius: 20px;
+width: 500px;
+height: 200px;
+padding: 20px;
+margin: 0 auto;
+}
+.subscribe-form {
+display: flex;
+width: 100%;
+gap: 25px; 
+}
+.subscribe-input, .subscribe-btn {
+flex: 1;
+height: 50px;
+border: none;
+border-radius: 3px;
+text-align: center;
+font-size: 18px;
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+}
+.subscribe-input {
+outline: none;
+}
+.subscribe-btn {
+background-color: #b8e3f7;
+color: #3e3e40 !important;
+cursor: pointer;
+transition: 0.3s;
+flex: 0.4; 
+}
+.subscribe-btn:hover {
+background-color: #0088cc;
+}
+@media (max-width: 576px) { /* Mobile screens */
+.subscribe-container {
+width: 90%;
+height: auto;
+padding: 15px;
+}
+.subscribe-form {
+flex-direction: column;
+gap: 10px;
+}
+.subscribe-btn {
+flex: 1;
+height: 45px;
+}
+}
+.footer{background-color:#ffefe5;
+}
+.circular-card {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+border: 2px dashed white; 
+color: white;
+font-size: 36px;
+text-align: center;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Social Icons*/
+.social-icons a i {
+color: #128f8b; 
+transition: color 0.3s ease-in-out;
+}
+.social-icons a i:hover {
+color: #0a5e5b; /* Darker shade on hover */
+}
+.post-area{
+list-style: none;
+display: flex;
+gap: 22px;
+align-items: center;
+margin-bottom: 20px;
+@media(max-width:450px){
+gap: 12px;
+}
+.main-menu ul li a{color:orange;}
+.text-body-secondary{font-size:21px;}
+/* Cute images styling */
+.cute-img {
+width: 50px;
+height: 50px;
+position: absolute;
+opacity: 0;
+transition: all 0.5s ease;
+}
+.cute-top-left {
+top: 20px;
+left: 20px;
+}
+.cute-top-right {
+top: 20px;
+right: 20px;
+}
+.cute-bottom-left {
+bottom: 20px;
+left: 20px;
+}
+.cute-bottom-right {
+bottom: 20px;
+right: 20px;
+}
+/* Animation classes */
+.cute-img.animate {
+opacity: 1;
+transform: scale(1.2) rotate(10deg);
+}
+.masthead {
+position: relative;
+overflow: hidden;
+}
+/* Activities by season */
+.card-img-hover {
+transition: transform 0.3s ease;
+}
+.card-img-hover:hover, 
+.card-img-hover.active {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+z-index: 10;
+position: relative;
+}
+@media (max-width: 991px) {
+.navbar-collapse {
+background: #fff; 
+padding: 20px;
+margin-top: 15px;
+}
+.navbar-toggler {
+border: none;
+padding: 10px;
+}
+.navbar-toggler:focus {
+box-shadow: none;
+}
+}
